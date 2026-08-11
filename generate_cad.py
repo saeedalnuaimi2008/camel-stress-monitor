@@ -52,7 +52,12 @@ def build_enclosure():
         extents=[core_l - mm_to_m(4), core_w - mm_to_m(4), core_h - mm_to_m(4)]
     )
     inner_housing = core.difference(core_cavity, engine="manifold")
-    inner_housing.visual.vertex_colors = [45, 45, 45, 255]
+    inner_housing.visual = trimesh.visual.TextureVisuals(
+        material=trimesh.visual.material.PBRMaterial(
+            baseColorFactor=[45, 45, 45, 255],
+            alphaMode="OPAQUE",
+        )
+    )
 
     scene = trimesh.Scene()
     scene.add_geometry(shell, node_name="outer_shell_ASA")
