@@ -156,3 +156,20 @@ on-camel mounting.
 * [ ] **Persistent Storage:** Integrating SQLite/PostgreSQL logging to 
 track multi-season workload trends for individual animals across training 
 cycles.
+
+## Mechanical Enclosure & CAD Architecture
+
+The sensor package is housed in a custom double-walled, ventilated 
+enclosure designed to withstand desert field conditions. 
+
+- **Outer Shield:** Matte white ASA to reflect direct solar radiation and 
+prevent thermal drift.
+- **Inner Core:** PETG housing to secure the ESP32 and sensor stack.
+- **Air Gap:** 2mm dead-air insulation layer to mitigate internal heat 
+buildup.
+
+Source and build files are located in the `cad/` directory, including the 
+parametric generator script (`generate_cad.py`).
+
+[Inspect 3D Enclosure Model 
+(GLB)](https://github.com/saeedalnuaimi2008/camel-stress-monitor/blob/main/cad/enclosure_v1.glb)
