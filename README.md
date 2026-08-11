@@ -1,8 +1,8 @@
 # Camel Thermal Stress & Workload Telemetry System
 
 A custom hardware-to-dashboard pipeline designed to monitor environmental 
-heat stress and movement load in high-performance racing camels during 
-extreme-heat training in the Gulf region.
+heat stress and movement load in high performance racing camels during 
+extreme heat training in the Gulf region.
 
 ---
 
@@ -15,7 +15,7 @@ heat stress formulas fail to accurately measure their physiological
 strain.
 
 I designed and built this system to give camel trainers real-time 
-visibility into micro-climate conditions and training intensity on the 
+visibility into microclimate conditions and training intensity on the 
 track. By pairing dynamic sensor sampling with livestock-specific thermal 
 formulas, the platform calculates immediate heat safety bounds and tracks 
 physical workload over time to help prevent heat stroke and overtraining 
