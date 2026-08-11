@@ -36,7 +36,12 @@ def build_enclosure():
     )
 
     shell = outer_box.difference(inner_box, engine="manifold")
-    shell.visual.vertex_colors = [235, 235, 235, 90]
+    shell.visual = trimesh.visual.TextureVisuals(
+        material=trimesh.visual.material.PBRMaterial(
+            baseColorFactor=[235, 235, 235, 90],
+            alphaMode="BLEND",
+        )
+    )
 
     core_l = l_ext - mm_to_m((WALL_THICKNESS + AIR_GAP) * 2)
     core_w = w_ext - mm_to_m((WALL_THICKNESS + AIR_GAP) * 2)
@@ -44,8 +49,7 @@ def build_enclosure():
 
     core = trimesh.creation.box(extents=[core_l, core_w, core_h])
     core_cavity = trimesh.creation.box(
-        extents=[core_l - mm_to_m(4), core_w - mm_to_m(4), core_h - 
-mm_to_m(4)]
+        extents=[core_l - mm_to_m(4), core_w - mm_to_m(4), core_h - mm_to_m(4)]
     )
     inner_housing = core.difference(core_cavity, engine="manifold")
     inner_housing.visual.vertex_colors = [45, 45, 45, 255]
