@@ -18,7 +18,7 @@ No complex math degree needed—just clean visuals, auto-alerts, and real-time u
 
 - Instant Heat Risk Score: Automatically combines heat and humidity into a single risk number so you know if the weather is safe or dangerous.
 - Smart Movement Tracking: Compares a camel movement over the past week against its normal monthly baseline. If movement drops hard during a heatwave, the app flags it immediately.
-- Plain-English Alerts: No confusing technical terms. The dashboard tells farm hands directly: "STATUS GOOD", "HEAT WARNING: FILL WATER TROUGHS", or "HIGH RISK ALERT: CHECK CAMEL NOW".
+- Plain English Alerts: No confusing technical terms. The dashboard tells farm hands directly: "STATUS GOOD", "HEAT WARNING: FILL WATER TROUGHS", or "HIGH RISK ALERT: CHECK CAMEL NOW".
 - Live Hardware Ready: Switch seamlessly between testing on 60 days of simulated data or plugging in an actual ESP32 microchip sensor setup via USB.
 
 ---
