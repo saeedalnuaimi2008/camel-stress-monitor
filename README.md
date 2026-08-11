@@ -180,4 +180,4 @@ Source files and the parametric generator script (`generate_cad.py`) are
 located in the `cad/` directory.
 
 [View 3D Enclosure 
-Model](https://github.com/saeedalnuaimi2008/camel-stress-monitor/blob/main/cad/enclosure_v1.glb)
+Model](https://gltf.viewer.org/?url=https://raw.githubusercontent.com/YOUR_USERNAME/camel-stress-monitor/main/cad/enclosure_v1.glb)
