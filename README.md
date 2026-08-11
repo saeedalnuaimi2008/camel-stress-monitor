@@ -157,19 +157,27 @@ on-camel mounting.
 track multi-season workload trends for individual animals across training 
 cycles.
 
-## Mechanical Enclosure & CAD Architecture
+## Mechanical Enclosure & CAD Architecture (V1 Limitations)
 
-The sensor package is housed in a custom double-walled, ventilated 
-enclosure designed to withstand desert field conditions. 
+The sensor package is housed in a custom double-walled enclosure 
+engineered for desert field deployment. The current V1 prototype presents 
+several documented mechanical and thermal flaws currently undergoing 
+iteration:
 
-- **Outer Shield:** Matte white ASA to reflect direct solar radiation and 
-prevent thermal drift.
-- **Inner Core:** PETG housing to secure the ESP32 and sensor stack.
-- **Air Gap:** 2mm dead-air insulation layer to mitigate internal heat 
-buildup.
+- **Thermal Trapping:** The 2mm dead-air gap insulates against external 
+solar radiation but traps internal processing heat from the ESP32 during 
+active telemetry bursts, lacking a passive convection path.
+- **Vibration Fatigue:** Rigid PCB-to-housing mounts risk solder joint 
+failure under continuous low-frequency dynamic loading from livestock 
+movement.
+- **Fastener Creep:** Direct threaded screws in FDM printed ASA/PETG risk 
+losing clamping force under extreme diurnal desert temperature swings.
+- **Battery Safety:** Enclosing the power source within a heavily 
+insulated core creates localized thermal concentration risks during high 
+discharge cycles.
 
-Source and build files are located in the `cad/` directory, including the 
-parametric generator script (`generate_cad.py`).
+Source files and the parametric generator script (`generate_cad.py`) are 
+located in the `cad/` directory.
 
 [Inspect 3D Enclosure Model 
 (GLB)](https://gltf-viewer.donmccurdy.com/?url=https://raw.githubusercontent.com/saeedalnuaimi2008/camel-stress-monitor/main/cad/enclosure_v1.glb)
