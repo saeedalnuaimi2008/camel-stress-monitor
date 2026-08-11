@@ -179,5 +179,5 @@ discharge cycles.
 Source files and the parametric generator script (`generate_cad.py`) are 
 located in the `cad/` directory.
 
-[Inspect 3D Enclosure Model 
-(GLB)](https://gltf-viewer.donmccurdy.com/?url=https://raw.githubusercontent.com/saeedalnuaimi2008/camel-stress-monitor/main/cad/enclosure_v1.glb)
+[View 3D Enclosure 
+Model](https://github.com/saeedalnuaimi2008/camel-stress-monitor/blob/main/cad/enclosure_v1.glb)
