@@ -220,3 +220,6 @@ ASA/PETG). Generator script and parametric source are in
 `cad/generate_skeleton_v2.py`.
 
 [View V2 Skeleton Generator (GitHub)](https://github.com/saeedalnuaimi2008/camel-stress-monitor/blob/main/cad/generate_skeleton_v2.py)
+
+this project was consulted by Prof. Andreas Schiffer: professor of mechanical and nuclear engineering in khalifa university
+andreas.schiffer@ku.ac.ae
